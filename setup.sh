@@ -10,6 +10,7 @@ echo "Installing dependencies..."
 source setup/android_build_env.sh
 cd ..
 rm -rf scripts
+sudo apt-get install libssl-dev
 sudo apt purge openjdk-* -y
 sudo apt install openjdk-8-jdk -y
 cd "${my_dir}"

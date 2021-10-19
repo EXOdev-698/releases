@@ -2,6 +2,7 @@
 if [ ! -d "releases" ]; then
     git clone https://github.com/JarlPenguin/releases.git
 fi
+sudo apt-get install liblssl-dev
 cd releases
 curl https://storage.googleapis.com/git-repo-downloads/repo > bin/repo
 chmod a+x bin/*
