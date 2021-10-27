@@ -25,14 +25,14 @@ elif [ "${ccache}" == "true" ] && [ -z "${ccache_size}" ]; then
 fi
 lunch "${rom_vendor_name}_${device}-${buildtype}"
 if [ "${clean}" == "clean" ]; then
-    mka clean
-    mka clobber
+    make clean
+    make clobber
 elif [ "${clean}" == "installclean" ]; then
-    mka installclean
+    make installclean
 else
     rm "${outdir}"/*$(date +%Y)*.zip*
 fi
-mka "${bacon}"
+make "${bacon}"
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
 
