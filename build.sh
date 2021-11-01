@@ -25,14 +25,14 @@ elif [ "${ccache}" == "true" ] && [ -z "${ccache_size}" ]; then
 fi
 lunch "${rom_vendor_name}_${device}-${buildtype}"
 if [ "${clean}" == "clean" ]; then
-    mka clean
-    mka clobber
+    make clean
+    make clobber
 elif [ "${clean}" == "installclean" ]; then
-    mka installclean
+    make installclean
 else
     rm "${outdir}"/*$(date +%Y)*.zip*
 fi
-mka "${bacon}"
+m "${bacon}"
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
 
@@ -65,12 +65,10 @@ if [ -e "${finalzip_path}" ]; then
     echo "Uploading"
 
     github-release "${release_repo}" "${tag}" "master" "${ROM} for ${device}
-
 Date: $(env TZ="${timezone}" date)" "${finalzip_path}"
     if [ "${generate_incremental}" == "true" ]; then
         if [ -e "${incremental_zip_path}" ] && [ "${old_target_files_exists}" == "true" ]; then
             github-release "${release_repo}" "${tag}" "master" "${ROM} for ${device}
-
 Date: $(env TZ="${timezone}" date)" "${incremental_zip_path}"
         elif [ ! -e "${incremental_zip_path}" ] && [ "${old_target_files_exists}" == "true" ]; then
             echo "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
@@ -82,7 +80,6 @@ Date: $(env TZ="${timezone}" date)" "${incremental_zip_path}"
     if [ "${upload_recovery}" == "true" ]; then
         if [ -e "${img_path}" ]; then
             github-release "${release_repo}" "${tag}" "master" "${ROM} for ${device}
-
 Date: $(env TZ="${timezone}" date)" "${img_path}"
         else
             echo "Build failed in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
@@ -96,25 +93,21 @@ Date: $(env TZ="${timezone}" date)" "${img_path}"
     if [ "${upload_recovery}" == "true" ]; then
         if [ "${old_target_files_exists}" == "true" ]; then
             telegram -M "Build completed successfully in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds
-
 Download ROM: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/${tag}/${zip_name}")
 Download incremental update: ["incremental_ota_update.zip"]("https://github.com/${release_repo}/releases/download/${tag}/incremental_ota_update.zip")
 Download recovery: ["recovery.img"]("https://github.com/${release_repo}/releases/download/${tag}/recovery.img")"
         else
             telegram -M "Build completed successfully in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds
-
 Download ROM: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/${tag}/${zip_name}")
 Download recovery: ["recovery.img"]("https://github.com/${release_repo}/releases/download/${tag}/recovery.img")"
         fi
     else
         if [ "${old_target_files_exists}" == "true" ]; then
             telegram -M "Build completed successfully in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds
-
 Download: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/${tag}/${zip_name}")
 Download incremental update: ["incremental_ota_update.zip"]("https://github.com/${release_repo}/releases/download/${tag}/incremental_ota_update.zip")"
         else
             telegram -M "Build completed successfully in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds
-
 Download: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/${tag}/${zip_name}")"
         fi
     fi
