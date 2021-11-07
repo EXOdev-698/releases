@@ -5,8 +5,8 @@ export GITHUB_EMAIL="maxim55miui11@gmail.com"
 
 export device="olives"
 
-export ROM="AospExtendedOS"
-export ROM_DIR="${WORKSPACE}/../AospExtendedOS-12"
+export ROM="AospExtended-OS"
+export ROM_DIR="${WORKSPACE}/../AospExtended-OS-12"
 export ROM_VERSION="12.0"
 export official="false"
 export local_manifest_url="https://raw.githubusercontent.com/EXOdev-698/local_manifests/master/havoc-olivelite.xml"
