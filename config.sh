@@ -1,18 +1,18 @@
 #!/bin/bash
 
-export GITHUB_USER="IAmDeadlylxrd"
-export GITHUB_EMAIL="IAmDeadlylxrd@gmail.com"
+export GITHUB_USER="JonnyRoller23"
+export GITHUB_EMAIL="maxim55miui11@gmail.com"
 
 export device="olives"
 
-export ROM="ArrowOS"
-export ROM_DIR="${WORKSPACE}/../ArrowOS-11"
-export ROM_VERSION="11.0"
+export ROM="NusantaraROM"
+export ROM_DIR="${WORKSPACE}/../Nusantara-12"
+export ROM_VERSION="12.0"
 export official="false"
-export local_manifest_url="https://raw.githubusercontent.com/IAmDeadlylxrd/local_manifests/master/arrow-olives.xml"
-export manifest_url="https://github.com/ArrowOS/android_manifest"
-export rom_vendor_name="arrow"
-export branch="arrow-11.0"
+export local_manifest_url="https://raw.githubusercontent.com/JonnyRoller23/local_manifests/master/nusantara-olives.xml"
+export manifest_url="https://github.com/NusantaraProject-ROM/android_manifest"
+export rom_vendor_name="nad"
+export branch="12"
 export bacon="bacon -j$(nproc --all)"
 export buildtype="userdebug"
 export clean="installclean"
@@ -24,6 +24,6 @@ export ccache_size="0"
 
 export jenkins="true"
 
-export release_repo="IAmDeadlylxrd/releases"
+export release_repo="JonnyRoller23/releases"
 
 export timezone="UTC"
