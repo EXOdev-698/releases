@@ -19,8 +19,8 @@ export clean="installclean"
 export generate_incremental="false"
 export upload_recovery="false"
 
-export ccache="false"
-export ccache_size="0"
+export ccache="true"
+export ccache_size="150"
 
 export jenkins="true"
 
