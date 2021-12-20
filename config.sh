@@ -5,8 +5,8 @@ export GITHUB_EMAIL="maxim55miui11@gmail.com"
 
 export device="olives"
 
-export ROM="crDroid"
-export ROM_DIR="${WORKSPACE}/../crDroidAndroid"
+export ROM="crDroid-11"
+export ROM_DIR="${WORKSPACE}/../crDroidAndroid-11-olives"
 export ROM_VERSION="7.13"
 export official="false"
 export local_manifest_url="https://raw.githubusercontent.com/JonnyRoller23/local_manifests/master/crdroid-olives.xml"
