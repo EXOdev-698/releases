@@ -1,15 +1,15 @@
 #!/bin/bash
 
-export GITHUB_USER="IAmDeadlylxrd"
-export GITHUB_EMAIL="IAmDeadlylxrd@gmail.com"
+export GITHUB_USER="JonnyRoller23"
+export GITHUB_EMAIL="maxim55miui11@gmail.com"
 
-export device="olive"
+export device="olives"
 
 export ROM="crDroid"
 export ROM_DIR="${WORKSPACE}/../crDroidAndroid"
-export ROM_VERSION="7.11"
+export ROM_VERSION="7.13"
 export official="false"
-export local_manifest_url="https://raw.githubusercontent.com/IAmDeadlylxrd/local_manifests/master/crdroid-olive.xml"
+export local_manifest_url="https://raw.githubusercontent.com/JonnyRoller23/local_manifests/master/crdroid-olivelite.xml"
 export manifest_url="https://github.com/crdroidandroid/android"
 export rom_vendor_name="lineage"
 export branch="11.0"
@@ -24,6 +24,6 @@ export ccache_size="250"
 
 export jenkins="true"
 
-export release_repo="IAmDeadlylxrd/releases"
+export release_repo="JonnyRoller23/releases"
 
 export timezone="UTC"
