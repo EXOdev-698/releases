@@ -6,7 +6,7 @@ export GITHUB_EMAIL="maxim55miui11@gmail.com"
 export device="olives"
 
 export ROM="LineageOS-18.1"
-export ROM_DIR="${WORKSPACE}/../LineageOS-18.1-olives"
+export ROM_DIR="${WORKSPACE}/../LineageOS-Mods-18.1-olives"
 export ROM_VERSION="11"
 export official="false"
 export local_manifest_url="https://raw.githubusercontent.com/JonnyRoller23/manifest/main/lineage-18.1-olives.xml"
