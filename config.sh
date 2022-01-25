@@ -15,7 +15,7 @@ export rom_vendor_name="radiant"
 export branch="twelve"
 export bacon="bacon"
 export buildtype="userdebug"
-export clean="installclean"
+export clean="clean"
 export generate_incremental="false"
 export upload_recovery="false"
 
