@@ -7,7 +7,7 @@ export device="olives"
 
 export ROM="NusantaraProject-12"
 export ROM_DIR="${WORKSPACE}/../NusantaraProject-12-olivelite"
-export ROM_VERSION="5.2"
+export ROM_VERSION="12.0"
 export official="false"
 export local_manifest_url="https://raw.githubusercontent.com/JonnyRoller23/manifest/main/nusantara-12-olivelite.xml"
 export manifest_url="https://github.com/NusantaraProject-ROM/android_manifest"
