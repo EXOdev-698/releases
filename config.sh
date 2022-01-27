@@ -3,7 +3,7 @@
 export GITHUB_USER="JonnyRoller23"
 export GITHUB_EMAIL="maxim55miui11@gmail.com"
 
-export device="olives"
+export device="olivelite"
 
 export ROM="LineageOS-18.1"
 export ROM_DIR="${WORKSPACE}/../LineageOS-Mods-18.1-olives"
