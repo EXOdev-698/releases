@@ -24,6 +24,6 @@ export ccache_size="250"
 
 export jenkins="true"
 
-export release_repo="JonnyRoller23/releases"
+export release_repo="JonnyRoller23/releases_rom"
 
 export timezone="UTC"
