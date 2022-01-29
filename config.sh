@@ -3,7 +3,7 @@
 export GITHUB_USER="JonnyRoller23"
 export GITHUB_EMAIL="maxim55miui11@gmail.com"
 
-export device="olives"
+export device="olivlite"
 
 export ROM="CrDroid-12"
 export ROM_DIR="${WORKSPACE}/../CrDroid-olivelite-12"
@@ -24,6 +24,6 @@ export ccache_size="250"
 
 export jenkins="true"
 
-export release_repo="JonnyRoller23/releases"
+export release_repo="JonnyRoller23/releases_rom"
 
 export timezone="UTC"
