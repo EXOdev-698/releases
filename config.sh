@@ -3,7 +3,7 @@
 export GITHUB_USER="JonnyRoller23"
 export GITHUB_EMAIL="maxim55miui11@gmail.com"
 
-export device="olivlite"
+export device="olivelite"
 
 export ROM="CrDroid-12"
 export ROM_DIR="${WORKSPACE}/../CrDroid-olivelite-12"
