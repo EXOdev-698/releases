@@ -32,7 +32,7 @@ elif [ "${clean}" == "installclean" ]; then
 else
     rm "${outdir}"/*$(date +%Y)*.zip*
 fi
-brunch "olivelite"
+m "aex"
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
 
