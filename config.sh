@@ -6,7 +6,7 @@ export GITHUB_EMAIL="maxim55miui11@gmail.com"
 export device="olivelite"
 
 export ROM="AospExtendedOS"
-export ROM_DIR="${WORKSPACE}/../AospExtendedOS-11"
+export ROM_DIR="${WORKSPACE}/../AospExtendedOS-12"
 export ROM_VERSION="12.0"
 export official="false"
 export local_manifest_url="https://raw.githubusercontent.com/JonnyRoller23/manifest/main/aex-12-olivelite.xml"
