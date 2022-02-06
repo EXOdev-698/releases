@@ -7,7 +7,7 @@ export device="olivelite"
 
 export ROM="CrDroid-12"
 export ROM_DIR="${WORKSPACE}/../CrDroid-olivelite-12"
-export ROM_VERSION="11"
+export ROM_VERSION="12"
 export official="false"
 export local_manifest_url="https://raw.githubusercontent.com/JonnyRoller23/manifest/main/crdroid-v8-olivelite.xml"
 export manifest_url="https://github.com/crdroidandroid/android"
