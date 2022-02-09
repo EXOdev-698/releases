@@ -3,7 +3,7 @@
 export GITHUB_USER="JonnyRoller23"
 export GITHUB_EMAIL="maxim55miui11@gmail.com"
 
-export device="olivelite"
+export device="olive"
 
 export ROM="LineageOS-12"
 export ROM_DIR="${WORKSPACE}/../LineageOS-olivelite-12"
